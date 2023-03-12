@@ -69,6 +69,7 @@ a {
     background-position: center center;
     background-size: cover;
     filter: var(--invert);
+    opacity:0.7;
 }
 
 .navbar {
