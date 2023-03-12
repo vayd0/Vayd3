@@ -211,25 +211,6 @@ label {
     cursor: pointer;
 }
 
-footer {
-    text-align: center;
-    margin: 2rem;
-    color: var(--main-color);
-}
-
-footer .copyright {
-    font-size: 13px
-}
-
-footer .madeh {
-    font-size: 20px;
-}
-
-footer .madeh i {
-    color: rgb(252, 55, 55);
-    animation: beat 1s ease-in-out infinite;
-}
-
 /* Animation */
 
 @keyframes beat {
