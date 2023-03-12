@@ -8,8 +8,8 @@
     --invert: invert();
     --card-bg: rgb(13, 13, 13);
     --card-btn: rgba(27, 27, 27);
-    --card-btnh:rgb(18, 18, 18);
-    --card-btnch:rgb(80, 80, 80);
+    --card-btnh: rgb(18, 18, 18);
+    --card-btnch: rgb(80, 80, 80);
     --navbtnhc: rgba(130, 128, 128, 0.5);
 }
 
@@ -17,11 +17,11 @@
     --background: rgb(253, 251, 251);
     --main-color: rgb(172, 172, 172);
     --card-shadow: rgb(176, 176, 176);
-    --invert:none;
+    --invert: none;
     --card-bg: rgb(176, 176, 176);
     --card-btn: rgb(251, 251, 251);
-    --card-btnh:rgb(255, 255, 255);
-    --card-btnch:rgb(176, 176, 176);
+    --card-btnh: rgb(255, 255, 255);
+    --card-btnch: rgb(176, 176, 176);
     --navbtnhc: rgb(0, 0, 0);
 }
 
@@ -32,6 +32,8 @@ body {
     scroll-behavior: smooth;
     margin: 0 !important;
     perspective: 600px !important;
+    transition: all 0.3s;
+    overflow: hidden;
 }
 
 a {
@@ -39,6 +41,15 @@ a {
 }
 
 /* Définition des styles pour la .navbarbar */
+main {
+    background-image: url("https://cdn.discordapp.com/attachments/955941057764405308/1084529784115167382/7a3a565535d205143c9a54434113f67d.gif");
+    background-size: cover;
+    -webkit-mask-image: linear-gradient(to bottom, var(--background), transparent);
+    mask-image: linear-gradient(to bottom, var(--background), transparent);
+    margin: 0 !important;
+    padding: 20px 0 100px 0;
+    filter: invert()
+}
 
 .navbar {
     overflow: hidden;
@@ -47,7 +58,7 @@ a {
 }
 
 .theme-switch input {
-    visibility:hidden;
+    visibility: hidden;
 }
 
 .theme-switch {
@@ -59,8 +70,8 @@ a {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
-    transition: all 0.3s; 
-    margin-left:30px;
+    transition: all 0.3s;
+    margin-left: 30px;
 }
 
 .theme-switch:not(:checked) {
@@ -69,21 +80,22 @@ a {
     background-position: center center;
     background-size: cover;
     filter: var(--invert);
-    opacity:0.7;
+    opacity: 0.7;
 }
 
 .navbar {
-    margin-top:30px;
+    margin-top: 30px;
 }
 
 .navbar a,
-input, label {
-    position:relative;
+input,
+label {
+    position: relative;
     color: var(--main-color);
     text-align: center;
     font-size: 20px;
     text-decoration: none;
-    margin: 20px 15px 0 15px;
+    margin: 0 15px 0 15px;
     background-color: transparent;
     border-radius: 7px;
     transition: background-color 0.5s,
