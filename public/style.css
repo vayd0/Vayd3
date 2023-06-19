@@ -14,11 +14,11 @@
 }
 
 [data-theme="light"] {
-    --background: rgb(155, 155, 155);
+    --background: rgb(0, 0, 0);
     --main-color: rgb(255, 255, 255);
     --card-shadow: rgb(176, 176, 176);
     --invert: none;
-    --card-bg: rgb(176, 176, 176);
+    --card-bg: rgb(97, 97, 97);
     --card-btn: rgb(251, 251, 251);
     --card-btnh: rgb(255, 255, 255);
     --card-btnch: rgb(176, 176, 176);
